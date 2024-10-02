@@ -1,0 +1,927 @@
+type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">high</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">low</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">high</value>
+<value name="gfxconfigpowersaver_crowd" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Adreno 660 Settings  -->
+<conditions>
+<stock id="Adreno_660_Renderer"/>
+</conditions>
+<uuid>Adreno660HardwareSpecifications_1_9_1_RC3</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">900</value>
+<value name="gfxconfig_high_window_scale" type="integer">80</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">high</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">high</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">low</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">high</value>
+<value name="gfxconfigpowersaver_crowd" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<conditions>
+<or>
+<stock id="Adreno_730_Renderer"/>
+<!--  Adreno 732  -->
+<and>
+<GPU_renderer>
+<contains>Adreno</contains>
+</GPU_renderer>
+<GPU_renderer>
+<contains>732</contains>
+</GPU_renderer>
+</and>
+<!--  Adreno 735  -->
+<and>
+<GPU_renderer>
+<contains>Adreno</contains>
+</GPU_renderer>
+<GPU_renderer>
+<contains>735</contains>
+</GPU_renderer>
+</and>
+</or>
+</conditions>
+<uuid>Adreno730HardwareSpecifications_1_9_3_RC11</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">900</value>
+<value name="gfxconfig_high_window_scale" type="integer">80</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">high</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">high</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">low</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">high</value>
+<value name="gfxconfigpowersaver_crowd" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Adreno 740 Settings  -->
+<conditions>
+<and>
+<GPU_renderer>
+<contains>Adreno</contains>
+</GPU_renderer>
+<GPU_renderer>
+<contains>740</contains>
+</GPU_renderer>
+</and>
+</conditions>
+<uuid>Adreno740HardwareSpecifications_1_10RC10</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">900</value>
+<value name="gfxconfig_high_window_scale" type="integer">80</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">high</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">high</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">low</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">high</value>
+<value name="gfxconfigpowersaver_crowd" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Adreno 750 Settings  -->
+<conditions>
+<and>
+<GPU_renderer>
+<contains>Adreno</contains>
+</GPU_renderer>
+<GPU_renderer>
+<contains>750</contains>
+</GPU_renderer>
+</and>
+</conditions>
+<uuid>Adreno750HardwareSpecifications_1_10_2RC1</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">1080</value>
+<value name="gfxconfig_high_window_scale" type="integer">80</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">high</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">high</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">low</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">high</value>
+<value name="gfxconfigpowersaver_crowd" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Adreno 610 618 620 Settings  -->
+<conditions>
+<or>
+<stock id="Adreno_610_Renderer"/>
+<stock id="Adreno_612_Renderer"/>
+<stock id="Adreno_615_Renderer"/>
+<stock id="Adreno_616_Renderer"/>
+<stock id="Adreno_617_Renderer"/>
+<stock id="Adreno_618_Renderer"/>
+<stock id="Adreno_619_Renderer"/>
+<stock id="Adreno_619L_Renderer"/>
+<stock id="Adreno_620_Renderer"/>
+</or>
+</conditions>
+<uuid>Adreno610HardwareSpecifications_1_9_1_RC3</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="FixedScreenHeight" type="integer">720</value>
+<value name="MobileGraphicBoost" type="integer">0</value>
+<!--  Graphics Settings  -->
+<value name="gfxconfig_night_lighting" type="string">low</value>
+<value name="gfxconfig_shadows" type="string">ultralow</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">off</value>
+<value name="gfxconfig_crowd" type="string">ultralow</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">low</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">ultralow</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">low</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">low</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">low</value>
+<value name="gfxconfigpowersaver_crowd" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_objects" type="string">low</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">low</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">low</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali T880 Settings  -->
+<conditions>
+<stock id="Mali_T880_Renderer"/>
+</conditions>
+<uuid>MaliT880HardwareSpecifications147rc4V2</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<!--  Graphics Settings  -->
+<value name="gfxconfig_night_lighting" type="string">low</value>
+<value name="gfxconfig_shadows" type="string">ultralow</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">off</value>
+<value name="gfxconfig_crowd" type="string">ultralow</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">low</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">ultralow</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali G51 and G57 Settings  -->
+<conditions>
+<or>
+<stock id="Mali_G51_Renderer"/>
+<stock id="Mali_G52_Renderer"/>
+<and>
+<GPU_renderer>
+<contains>Mali</contains>
+</GPU_renderer>
+<GPU_renderer>
+<contains>G57</contains>
+</GPU_renderer>
+</and>
+</or>
+</conditions>
+<uuid>MaliG51HardwareSpecifications_1_9_b35</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="NeedsFlushAfterAO" type="integer">1</value>
+<value name="FixedScreenHeight" type="integer">720</value>
+<!--  Graphics Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">low</value>
+<value name="gfxconfig_shadows" type="string">ultralow</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">off</value>
+<value name="gfxconfig_crowd" type="string">ultralow</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">low</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">low</value>
+<value name="gfxconfig_shaders" type="string">ultralow</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali G71 Settings  -->
+<conditions>
+<stock id="Mali_G71_Renderer"/>
+</conditions>
+<uuid>MaliG71HardwareSpecifications_1_9_b33</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="FixedScreenHeight" type="integer">720</value>
+<!--  Graphics Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">low</value>
+<value name="gfxconfig_shadows" type="string">ultralow</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">off</value>
+<value name="gfxconfig_crowd" type="string">ultralow</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">low</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">ultralow</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali G72 MP 12 Settings  -->
+<conditions>
+<stock id="Mali_G72_MP12_Renderer"/>
+</conditions>
+<uuid>MaliG72MP12HardwareSpecifications_1_9_b33</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="FixedScreenHeight" type="integer">720</value>
+<!--  Graphics Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">low</value>
+<value name="gfxconfig_shadows" type="string">ultralow</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">off</value>
+<value name="gfxconfig_crowd" type="string">ultralow</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">low</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">ultralow</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Settings  -->
+<value name="gfxconfigpowersaver_window_scale" type="integer">100</value>
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali G72 Settings  -->
+<conditions>
+<stock id="Mali_G72_Renderer"/>
+<not>
+<stock id="Mali_G72_MP12_Renderer"/>
+</not>
+</conditions>
+<uuid>MaliG72HardwareSpecifications_1_9_b33</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<value name="DisableBlendedMesh" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">800</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">low</value>
+<value name="gfxconfig_shadows" type="string">low</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">low</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">low</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">low</value>
+<value name="gfxconfigpowersaver_crowd" type="string">low</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">low</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali G76 Settings  -->
+<conditions>
+<stock id="Mali_G76_Renderer"/>
+</conditions>
+<uuid>MaliG76HardwareSpecifications_1_9_b33</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">800</value>
+<value name="gfxconfig_high_window_scale" type="integer">90</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">high</value>
+<value name="gfxconfigpowersaver_crowd" type="string">low</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali G77 Settings  -->
+<conditions>
+<and>
+<!--  Only Android 11 and above  -->
+<OS_version_major>
+<more_or_equal>11</more_or_equal>
+</OS_version_major>
+<stock id="Mali_G77_Renderer"/>
+</and>
+</conditions>
+<uuid>MaliG77HardwareSpecifications_1_9_1_RC3</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">800</value>
+<value name="gfxconfig_high_window_scale" type="integer">90</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">high</value>
+<value name="gfxconfigpowersaver_crowd" type="string">low</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali G78 Settings  -->
+<conditions>
+<and>
+<!--  Only Android 11 and above  -->
+<OS_version_major>
+<more_or_equal>11</more_or_equal>
+</OS_version_major>
+<stock id="Mali_G78_Renderer"/>
+</and>
+</conditions>
+<uuid>MaliG78HardwareSpecifications_1_9_3_RC11</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">800</value>
+<value name="gfxconfig_high_window_scale" type="integer">80</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">low</value>
+<value name="gfxconfigpowersaver_crowd" type="string">low</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Mali G710 | G715 Settings  -->
+<conditions>
+<or>
+<and>
+<GPU_renderer>
+<contains>Mali</contains>
+</GPU_renderer>
+<GPU_renderer>
+<contains>G710</contains>
+</GPU_renderer>
+</and>
+<and>
+<GPU_renderer>
+<contains>Mali</contains>
+</GPU_renderer>
+<GPU_renderer>
+<contains>G715</contains>
+</GPU_renderer>
+</and>
+</or>
+</conditions>
+<uuid>MaliG710HardwareSpecifications_1_10_RC5</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">800</value>
+<value name="gfxconfig_high_window_scale" type="integer">80</value>
+<value name="gfxconfig_high_max_fps" type="integer">60</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">high</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">low</value>
+<value name="gfxconfigpowersaver_crowd" type="string">low</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+</spec>
+<spec>
+<!--  Xclipse 920 Settings  -->
+<conditions>
+<or>
+<stock id="Xclipse_920_Renderer"/>
+<and>
+<GPU_renderer>
+<contains>Xclipse</contains>
+</GPU_renderer>
+<GPU_renderer>
+<contains>940</contains>
+</GPU_renderer>
+</and>
+</or>
+</conditions>
+<uuid>Xclipse920HardwareSpecifications_1_10_RC10</uuid>
+<regkey>
+<!--  Override Settings  -->
+<value name="RegistryOverridesSettings" type="integer">1</value>
+<value name="AllowPerformanceMode" type="integer">1</value>
+<value name="ForcePerformanceModeInMenus" type="integer">1</value>
+<!--  Performance Mode Resolution & Target Framerate  -->
+<value name="FixedScreenHeight" type="integer">800</value>
+<value name="gfxconfig_high_window_scale" type="integer">80</value>
+<value name="gfxconfig_high_max_fps" type="integer">120</value>
+<!--  Graphics Mode Settings  -->
+<value name="gfxconfig_multisampling" type="string">4xmsaa</value>
+<value name="gfxconfig_night_lighting" type="string">medium</value>
+<value name="gfxconfig_shadows" type="string">medium</value>
+<value name="gfxconfig_advanced_fog" type="string">off</value>
+<value name="gfxconfig_particles" type="string">low</value>
+<value name="gfxconfig_crowd" type="string">low</value>
+<value name="gfxconfig_cloth" type="string">high</value>
+<value name="gfxconfig_dynamic_ambient_occ" type="string">low</value>
+<value name="gfxconfig_groundCover" type="string">off</value>
+<value name="gfxconfig_vehicles" type="string">medium</value>
+<value name="gfxconfig_track" type="string">medium</value>
+<value name="gfxconfig_trees" type="string">medium</value>
+<value name="gfxconfig_objects" type="string">medium</value>
+<value name="gfxconfig_car_reflection" type="string">low</value>
+<value name="gfxconfig_water" type="string">low</value>
+<value name="gfxconfig_mirrors" type="string">off</value>
+<value name="gfxconfig_skidmarks" type="string">on</value>
+<value name="gfxconfig_global_illumination" type="string">off</value>
+<value name="gfxconfig_textures" type="string">high</value>
+<value name="gfxconfig_shaders" type="string">medium</value>
+<value name="gfxconfig_anisotropic_filtering" type="string">off</value>
+<value name="gfxconfig_high_max_fps" type="integer">120</value>
+<!--  Energy Saver Mode Settings  -->
+<value name="gfxconfigpowersaver_anisotropic_filtering" type="string">off</value>
+<value name="gfxconfigpowersaver_car_reflection" type="string">high</value>
+<value name="gfxconfigpowersaver_crowd" type="string">low</value>
+<value name="gfxconfigpowersaver_objects" type="string">medium</value>
+<value name="gfxconfigpowersaver_shaders" type="string">ultralow</value>
+<value name="gfxconfigpowersaver_textures" type="string">high</value>
+<value name="gfxconfigpowersaver_track" type="string">medium</value>
+<value name="gfxconfigpowersaver_trees" type="string">medium</value>
+<value name="gfxconfigpowersaver_vehicles" type="string">medium</value>
+<!--  Performance Mode Settings  -->
+<value name="gfxconfig_high_anisotropic_filtering" type="string">off</value>
+</regkey>
+<!--  Disable DRS fbug://GRIDAUTO-8073  -->
+<regkey path="Software\Feral Interactive\Grid Autosport\Setup\DynamicResolutionScaling">
+<value name="Enable" type="integer">0</value>
+</regkey>
+</spec>
+<spec>
+<!--  Exynos 9810 perform worse when multithreading car updates  -->
+<conditions>
+<Board>
+<contains>universal9810</contains>
+</Board>
+</conditions>
+<uuid>exynos9810_multithreading_issues145rc6</uuid>
+<regkey>
+<value name="SynchronousCarUpdate" type="integer">1</value>
+</regkey>
+</spec>
+<spec>
+<!--  Runtime ASTC encoding fast enough now to be worth enabling on all devices
+			 now that we can use the multithreaded option
+		 -->
+<uuid>highmemory_load_times_16RC7</uuid>
+<regkey>
+<value name="FeralEnableRuntimeASTCCompression" type="integer">1</value>
+<value name="ThreadedASTCEncoding" type="integer">1</value>
+</regkey>
+</spec>
+<!--  Reduced haptic strengh fbug://GRIDAUTO-7969  -->
+<spec>
+<conditions>
+<!--  Applies to Pixel and Samsung devices via regkey  -->
+</conditions>
+<uuid>haptic_device_strength_19R30</uuid>
+<regkey>
+<value name="HapticDeviceStrength" type="string">0.4</value>
+<value name="HapticDeviceStrength_samsung" type="string">0.3</value>
+<value name="HapticDeviceStrength_google" type="string">0.3</value>
+</regkey>
+</spec>
+<!--  OnePlus Nord N10 UI override,fbug://GRIDAUTO-8019  -->
+<spec>
+<uuid>OnePlus_NordN10_ui_overridev2</uuid>
+<conditions>
+<or>
+<Device_Name>
+<is>OnePlusN10</is>
+</Device_Name>
+<Device_Name>
+<is>OnePlusN10METRO</is>
+</Device_Name>
+<Device_Name>
+<is>OnePlusN10TMO</is>
+</Device_Name>
+<Device_Name>
+<is>Spacewar</is>
+</Device_Name>
+<!--  Samsung Galaxy S10 fbug://COHONE-7507  -->
+<Device_Name>
+<is>beyond1</is>
+</Device_Name>
+<Device_Name>
+<is>beyond1q</is>
+</Device_Name>
+<!--  Samsung Galaxy S10+  -->
+<Device_Name>
+<is>beyond2</is>
+</Device_Name>
+<Device_Name>
+<is>beyond2q</is>
+</Device_Name>
+</or>
+</conditions>
+<regkey path="Software\Feral Interactive\Grid Autosport\Setup">
+<value name="DeviceIsTablet" type="integer">0</value>
+</regkey>
+</spec>
+<!--  Grid shader workaround Adreno 650 fbug://GRIDAUTO-7202  -->
+<spec>
+<conditions>
+<and>
+<OS_version_major>
+<more_or_equal>11</more_or_equal>
+</OS_version_major>
+<stock id="Adreno_650_Renderer"/>
+</and>
+</conditions>
+<uuid>GRIDAUTO7202Workaround20</uuid>
+<regkey>
+<value name="EnableGRIDAUTO7202Workaround" type="integer">1</value>
+</regkey>
+</spec>
+<!--  Targeting Xiaomi MiUI 14 devices  -->
+<spec>
+<uuid>FeralSplashScreenHangMiUI</uuid>
+<conditions>
+<and>
+<Vendor_Name>
+<is>Xiaomi</is>
+</Vendor_Name>
+<OS_version_major>
+<more_or_equal>12</more_or_equal>
+</OS_version_major>
+</and>
+</conditions>
+<regkey path="Software\IndirectX\Direct3D\Config" copyInitial="false">
+<value name="VulkanRenderToBackbuffer" type="integer">0</value>
+</regkey>
+</spec>
+<!--  Enabling HyperOS audio bug workaround for all devices  -->
+<spec>
+<regkey path="Software\Feral Interactive\Grid Autosport\Setup">
+<value name="WwiseSoundBundlePluginSoundCutFix" type="integer">1</value>
+</regkey>
+</spec>
+</gameinfo>
