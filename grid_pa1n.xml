@@ -1,0 +1,2586 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gameinfo>
+
+	<!-- GAME INFO START -->
+
+	<!-- *** DO NOT EDIT ANYTHING IN THIS SECTION - AUTO GENERATED FROM GAME INFO *** -->
+
+	<spec>
+		<regkey>
+			<value name="DonePromotional"     type="integer">0</value>
+			<value name="DoneUnsupported"     type="integer">0</value>
+			<value name="DoneMinOS"           type="integer">0</value>
+		</regkey>
+	</spec>
+
+
+	<date>20240911140000</date>
+	
+	
+	<!-- GAME INFO END -->
+
+	<!--============================================================================>
+	<                       General Configuration                                   >
+	<=============================================================================-->
+	<!-- Temporarily use Test Server in development: REMOVE BEFORE SHIPPING -->
+	<spec>
+		<uuid>SetFeralTestServerMPPatch</uuid>
+		<regkey>
+			<value name="UseTestFeralNetServer" type="integer">0</value>
+		</regkey>
+	</spec>
+	
+	<!-- Require Vulkan -->
+	<spec>
+	<conditions>
+        <OpenGL_version_major><more>0</more></OpenGL_version_major>
+        </conditions>
+        <alert stock_id="VulkanSupportRequiredAndroid">
+            <replace>
+                <from>#{faq_section}</from>
+                <to>#i_linux_vulkan_required</to>
+            </replace>
+        </alert>
+    </spec>
+
+    <!-- Unsupported message -->
+	<spec>
+		<conditions>
+			<and>
+				<!-- Pixel 2 -->
+				<not><Device_Name><is>walleye</is></Device_Name></not>
+				<!-- Pixel 2 XL -->
+				<not><Device_Name><is>taimen</is></Device_Name></not>
+				<!-- Pixel 3 -->
+				<not><Device_Name><is>blueline</is></Device_Name></not>
+				<!-- Pixel 3 XL -->
+				<not><Device_Name><is>crosshatch</is></Device_Name></not>
+				<!-- Pixel 3a -->
+				<not><Device_Name><is>sargo</is></Device_Name></not>
+				<!-- Pixel 4 -->
+				<not><Device_Name><is>flame</is></Device_Name></not>
+				<!-- Pixel 4 XL -->
+				<not><Device_Name><is>coral</is></Device_Name></not>
+				<!-- Pixel 4a -->
+				<not><Device_Name><is>sunfish</is></Device_Name></not>
+				<!-- Pixel 4a 5G -->
+				<not><Device_Name><is>bramble</is></Device_Name></not>
+				<!-- Pixel 5 -->
+				<not><Device_Name><is>redfin</is></Device_Name></not>
+				<!-- Pixel 6 -->
+				<not><Device_Name><is>oriole</is></Device_Name></not>
+				<!-- Pixel 6 Pro -->
+				<not><Device_Name><is>raven</is></Device_Name></not>
+				<!-- Pixel 6a -->
+				<not><Device_Name><is>bluejay</is></Device_Name></not>
+				<!-- Pixel 7 -->
+				<not><Device_Name><is>cheetah</is></Device_Name></not>
+				<!-- Pixel 7 Pro -->
+				<not><Device_Name><is>panther</is></Device_Name></not>
+				<!-- Pixel 7a -->
+				<not><Device_Name><is>lynx</is></Device_Name></not>
+				<!-- Pixel 8 -->
+				<not><Device_Name><is>shiba</is></Device_Name></not>
+				<!-- Pixel 8 Pro -->
+				<not><Device_Name><is>husky</is></Device_Name></not>
+				<!-- HTC U12+ -->
+				<not><Device_Name><is>htc_imedtwl</is></Device_Name></not>
+				<not><Device_Name><is>htc_imedugl</is></Device_Name></not>
+				<not><Device_Name><is>htc_imeuhl</is></Device_Name></not>
+				<not><Device_Name><is>htc_imeuhljp</is></Device_Name></not>
+				<!-- Huawei Honor 10 -->
+				<not><Device_Name><is>HWCOL</is></Device_Name></not>
+				<!-- Huawei Mate 20 -->
+				<not><Device_Name><is>HWHMA</is></Device_Name></not>
+				<!-- LG V30+ -->
+				<not><Device_Name><is>joan</is></Device_Name></not>
+				<not><Device_Name><is>L-01K</is></Device_Name></not>
+				<!-- Motorola Moto Z2 Force -->
+				<not><Device_Name><is>nash</is></Device_Name></not>
+				<!-- Nokia 8 -->
+				<not><Device_Name><is>NB1</is></Device_Name></not>
+				<!-- OnePlus 5T -->
+				<not><Device_Name><is>OnePlus5T</is></Device_Name></not>
+				<!-- OnePlus 6 -->
+				<not><Device_Name><is>OnePlus6</is></Device_Name></not>
+				<!-- OnePlus 6T -->
+				<not><Device_Name><is>OnePlus6T</is></Device_Name></not>
+				<!-- OnePlus 7 -->
+				<not><Device_Name><is>OnePlus7</is></Device_Name></not>
+				<!-- OnePlus 7T -->
+				<not><Device_Name><is>OnePlus7T</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus7TTMO</is></Device_Name></not>
+				<!-- Razer Phone -->
+				<not><Device_Name><is>cheryl</is></Device_Name></not>
+				<not><Device_Name><is>cheryl_ckh</is></Device_Name></not>
+				<!-- Sony Xperia XZ1 -->
+				<not><Device_Name><is>701SO</is></Device_Name></not>
+				<not><Device_Name><is>G8341</is></Device_Name></not>
+				<not><Device_Name><is>G8342</is></Device_Name></not>
+				<not><Device_Name><is>G8343</is></Device_Name></not>
+				<not><Device_Name><is>SO-01K</is></Device_Name></not>
+				<not><Device_Name><is>SOV36</is></Device_Name></not>
+				<not><Device_Name><is>G8441</is></Device_Name></not>
+				<not><Device_Name><is>SO-02K</is></Device_Name></not>
+				<!-- Sony Xperia XZ1 Compact -->
+				<not><Device_Name><is>G8441</is></Device_Name></not>
+				<not><Device_Name><is>SO-02K</is></Device_Name></not>
+				<!-- Xperia XZ2  -->
+				<not><Device_Name><is>702SO</is></Device_Name></not>
+				<not><Device_Name><is>H8216</is></Device_Name></not>
+				<not><Device_Name><is>H8266</is></Device_Name></not>
+				<not><Device_Name><is>H8276</is></Device_Name></not>
+				<not><Device_Name><is>H8296</is></Device_Name></not>
+				<not><Device_Name><is>SO-03K</is></Device_Name></not>
+				<not><Device_Name><is>SOV37</is></Device_Name></not>
+				<!-- Xperia XZ2 Compact -->
+				<not><Device_Name><is>H8314</is></Device_Name></not>
+				<not><Device_Name><is>H8324</is></Device_Name></not>
+				<not><Device_Name><is>SO-05K</is></Device_Name></not>
+				<!-- Sony Xperia 1 -->
+				<not><Device_Name><is>J8110</is></Device_Name></not>
+				<not><Device_Name><is>J8170</is></Device_Name></not>
+				<not><Device_Name><is>J9110</is></Device_Name></not>
+				<not><Device_Name><is>J9150</is></Device_Name></not>
+				<not><Device_Name><is>J9180</is></Device_Name></not>
+				<not><Device_Name><is>SO-03L</is></Device_Name></not>
+				<not><Device_Name><is>SOV40</is></Device_Name></not>
+				<not><Device_Name><is>802SO</is></Device_Name></not>
+				<!-- Xiaomi Pocophone F1 -->
+				<not><Device_Name><is>beryllium</is></Device_Name></not>
+				<!-- Samsung Galaxy S8 -->
+				<not><Device_Name><is>dreamlte</is></Device_Name></not>
+				<not><Device_Name><is>dreamlteks</is></Device_Name></not>
+				<not><Device_Name><is>dreamqltechn</is></Device_Name></not>
+				<not><Device_Name><is>dreamqltecmcc</is></Device_Name></not>
+				<not><Device_Name><is>dream2lte</is></Device_Name></not>
+				<not><Device_Name><is>dream2lteks</is></Device_Name></not>
+				<not><Device_Name><is>dream2qltechn</is></Device_Name></not>
+				<not><Device_Name><is>cruiserlteatt</is></Device_Name></not>
+				<not><Device_Name><is>cruiserltesq</is></Device_Name></not>
+				<not><Device_Name><is>dreamqltecan</is></Device_Name></not>
+				<not><Device_Name><is>dreamqltesq</is></Device_Name></not>
+				<not><Device_Name><is>dreamqlteue</is></Device_Name></not>
+				<not><Device_Name><is>SC-02J</is></Device_Name></not>
+				<not><Device_Name><is>SC-03J</is></Device_Name></not>
+				<not><Device_Name><is>SCV35</is></Device_Name></not>
+				<not><Device_Name><is>SCV36</is></Device_Name></not>
+				<!-- Samsung Galaxy Note 8 -->
+				<not><Device_Name><is>greatlte</is></Device_Name></not>
+				<not><Device_Name><is>greatlteks</is></Device_Name></not>
+				<not><Device_Name><is>kona3g</is></Device_Name></not>
+				<not><Device_Name><is>konalte</is></Device_Name></not>
+				<not><Device_Name><is>konalteatt</is></Device_Name></not>
+				<not><Device_Name><is>konaltecan</is></Device_Name></not>
+				<not><Device_Name><is>konawifi</is></Device_Name></not>
+				<not><Device_Name><is>konawifiany</is></Device_Name></not>
+				<not><Device_Name><is>greatqlte</is></Device_Name></not>
+				<not><Device_Name><is>greatqltechn</is></Device_Name></not>
+				<not><Device_Name><is>greatqltecmcc</is></Device_Name></not>
+				<not><Device_Name><is>greatqltecs</is></Device_Name></not>
+				<not><Device_Name><is>greatqlteue</is></Device_Name></not>
+				<not><Device_Name><is>SC-01K</is></Device_Name></not>
+				<not><Device_Name><is>SCV37</is></Device_Name></not>
+				<!-- Samsung Galaxy S9/S9+ -->
+				<not><Device_Name><is>SCV38</is></Device_Name></not>
+				<not><Device_Name><is>SCV39</is></Device_Name></not>
+				<not><Device_Name><is>star2lte</is></Device_Name></not>
+				<not><Device_Name><is>star2lteks</is></Device_Name></not>
+				<not><Device_Name><is>star2qltechn</is></Device_Name></not>
+				<not><Device_Name><is>star2qltecs</is></Device_Name></not>
+				<not><Device_Name><is>star2qltesq</is></Device_Name></not>
+				<not><Device_Name><is>star2qlteue</is></Device_Name></not>
+				<not><Device_Name><is>starlte</is></Device_Name></not>
+				<not><Device_Name><is>starlteks</is></Device_Name></not>
+				<not><Device_Name><is>starqltechn</is></Device_Name></not>
+				<not><Device_Name><is>starqltecmcc</is></Device_Name></not>
+				<not><Device_Name><is>starqltecs</is></Device_Name></not>
+				<not><Device_Name><is>starqltesq</is></Device_Name></not>
+				<not><Device_Name><is>starqlteue</is></Device_Name></not>
+				<not><Device_Name><is>SC-02K</is></Device_Name></not>
+				<not><Device_Name><is>SC-03K</is></Device_Name></not>
+				<!-- Samsung Note 9 -->
+				<not><Device_Name><is>crownlte</is></Device_Name></not>
+				<not><Device_Name><is>crownlteks</is></Device_Name></not>
+				<not><Device_Name><is>crownqltechn</is></Device_Name></not>
+				<not><Device_Name><is>crownqltecs</is></Device_Name></not>
+				<not><Device_Name><is>crownqltesq</is></Device_Name></not>
+				<not><Device_Name><is>crownqlteue</is></Device_Name></not>
+				<not><Device_Name><is>SC-01L</is></Device_Name></not>
+				<not><Device_Name><is>SCV40</is></Device_Name></not>
+				<!-- Samsung Galaxy Note10 -->
+				<not><Device_Name><is>d1q</is></Device_Name></not>
+				<not><Device_Name><is>d1</is></Device_Name></not>
+				<!-- Samsung Galaxy Note10 5G -->
+				<not><Device_Name><is>d1x</is></Device_Name></not>
+				<!-- Samsung Galaxy Note10+ -->
+				<not><Device_Name><is>d2q</is></Device_Name></not>
+				<not><Device_Name><is>SC-01M</is></Device_Name></not>
+				<not><Device_Name><is>SCV45</is></Device_Name></not>
+				<not><Device_Name><is>d2s</is></Device_Name></not>
+				<!-- Samsung Galaxy Note10+ 5G -->
+				<not><Device_Name><is>d2x</is></Device_Name></not>
+				<not><Device_Name><is>d2xq</is></Device_Name></not>
+				<not><Device_Name><is>d2xq2</is></Device_Name></not>
+				<!-- Samsung Galaxy S10e -->
+				<not><Device_Name><is>beyond0</is></Device_Name></not>
+				<not><Device_Name><is>beyond0q</is></Device_Name></not>
+				<!-- Samsung Galaxy S10 -->
+				<not><Device_Name><is>SCV41</is></Device_Name></not>
+				<not><Device_Name><is>beyond1</is></Device_Name></not>
+				<not><Device_Name><is>beyond1q</is></Device_Name></not>
+				<!-- Samsung Galaxy S10+ -->
+				<not><Device_Name><is>SC-05L</is></Device_Name></not>
+				<not><Device_Name><is>beyond2</is></Device_Name></not>
+				<not><Device_Name><is>beyond2q</is></Device_Name></not>
+				<!-- Samsung Galaxy S10 5G -->
+				<not><Device_Name><is>beyondx</is></Device_Name></not>
+				<not><Device_Name><is>beyondxq</is></Device_Name></not>
+				<!-- Samsung Galaxy S10 Lite -->
+				<not><Device_Name><is>r5q</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S4 -->
+				<not><Device_Name><is>gts4llte</is></Device_Name></not>
+				<not><Device_Name><is>gts4llteatt</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltechn</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltekx</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltespr</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltetmo</is></Device_Name></not>
+				<not><Device_Name><is>gts4llteusc</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltevzw</is></Device_Name></not>
+				<not><Device_Name><is>gts4lwifi</is></Device_Name></not>
+				<not><Device_Name><is>gts4lwifichn</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S6 -->
+				<not><Device_Name><is>gts6l</is></Device_Name></not>
+				<not><Device_Name><is>gts6lwifi</is></Device_Name></not>
+				<not><Device_Name><is>gts6x</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S7 -->
+				<not><Device_Name><is>gts7l</is></Device_Name></not>
+				<not><Device_Name><is>gts7lwifi</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8 -->
+				<not><Device_Name><is>gts8wifi</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8 5G -->
+				<not><Device_Name><is>gts8</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8+ -->
+				<not><Device_Name><is>gts8pwifi</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8+ 5G -->
+				<not><Device_Name><is>gts8p</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8 Ultra -->
+				<not><Device_Name><is>gts8uwifi</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8 Ultra 5G -->
+				<not><Device_Name><is>gts8u</is></Device_Name></not>
+				<!-- Samsung Galaxy A80-->
+				<not><Device_Name><is>r1q</is></Device_Name></not>
+				<!--Samsung Galaxy S20-->
+				<not>
+					<and>
+						<!-- Mali s20 and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>x1s</is></Device_Name>
+					</and>
+				</not>
+				<not>
+					<and>
+						<!-- Mali s20 5G and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>SC-51A</is></Device_Name>
+					</and>
+				</not>
+				<not>
+					<and>
+						<!-- Mali s20 and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>SCG01</is></Device_Name>
+					</and>
+				</not>
+				<not><Device_Name><is>x1q</is></Device_Name></not>
+				<not><Device_Name><is>SC51Aa</is></Device_Name></not>
+				<not><Device_Name><is>SCG01</is></Device_Name></not>
+				<!--Samsung Galaxy S20 FE -->
+				<not>
+					<and>
+						<!-- Mali s20 FE and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>r8s</is></Device_Name>
+					</and>
+				</not>
+				<not><Device_Name><is>r8q</is></Device_Name></not>
+				<!--Samsung Galaxy S20+ -->
+				<not>
+					<and>
+						<!-- Mali s20 + and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>y2s</is></Device_Name>
+					</and>
+				</not>
+				<not><Device_Name><is>SCG02</is></Device_Name></not>
+				<not><Device_Name><is>y2q</is></Device_Name></not>
+				<!--Samsung Galaxy S20 Ultra-->
+				<not><Device_Name><is>SCG03</is></Device_Name></not>
+				<not><Device_Name><is>z3q</is></Device_Name></not>
+				<not>
+					<and>
+						<!-- Mali s20 Ultra and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>z3s</is></Device_Name>
+					</and>
+				</not>
+				<!-- Samsung Galaxy Note 20 -->
+				<not>
+					<and>
+						<!-- Mali Note 20 and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>c1s</is></Device_Name>
+					</and>
+				</not>
+				<not><Device_Name><is>c1q</is></Device_Name></not>
+				<!-- Samsung Galaxy Note 20 Ultra -->
+				<not><Device_Name><is>SC-53A</is></Device_Name></not>
+				<not><Device_Name><is>SCG06</is></Device_Name></not>
+				<not><Device_Name><is>c2q</is></Device_Name></not>
+				<not>
+					<and>
+						<!-- Mali Note 20 ultra and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>c2s</is></Device_Name>
+					</and>
+				</not>
+				<!-- Samsung Galaxy S21-->
+				<not><Device_Name><is>o1q</is></Device_Name></not>
+				<not><Device_Name><is>o1s</is></Device_Name></not>
+				<not><Device_Name><is>SC-51B</is></Device_Name></not>
+				<not><Device_Name><is>SCG09</is></Device_Name></not>
+				<!-- Samsung Galaxy S21 FE -->
+				<not><Device_Name><is>r9q</is></Device_Name></not>
+				<not><Device_Name><is>r9s</is></Device_Name></not>
+				<!-- Samsung Galaxy S21 Ultra -->
+				<not><Device_Name><is>SC-52B</is></Device_Name></not>
+				<not><Device_Name><is>p3q</is></Device_Name></not>
+				<not><Device_Name><is>p3s</is></Device_Name></not>
+				<!-- Samsung Galaxy S21+ 5G -->
+				<not><Device_Name><is>SCG10</is></Device_Name></not>
+				<not><Device_Name><is>t2q</is></Device_Name></not>
+				<not><Device_Name><is>t2s</is></Device_Name></not>
+				<!-- Samsung Galaxy S22 -->
+				<not><Device_Name><is>r0s</is></Device_Name></not>
+				<not><Device_Name><is>r0q</is></Device_Name></not>
+				<!-- Samsung Galaxy S22+ -->
+				<not><Device_Name><is>g0s</is></Device_Name></not>
+				<not><Device_Name><is>g0q</is></Device_Name></not>
+				<!-- Samsung Galaxy 22 Ultra -->
+				<not><Device_Name><is>b0s</is></Device_Name></not>
+				<not><Device_Name><is>b0q</is></Device_Name></not>
+				<!-- Samsung Galaxy S23 -->
+				<not><Device_Name><is>dm1q</is></Device_Name></not>
+				<!-- Samsung Galaxy S23+ -->
+				<not><Device_Name><is>dm2q</is></Device_Name></not>
+				<!-- Samsung Galaxy S23 Ultra -->
+				<not><Device_Name><is>dm3q</is></Device_Name></not>
+				<!-- Xiaomi Mi 6 -->
+				<not><Device_Name><is>sagit</is></Device_Name></not>
+				<!-- Xiaomi Mi 9 -->
+				<not><Device_Name><is>cepheus</is></Device_Name></not>
+				<!-- Xiaomi Mi 9 SE-->
+				<not><Device_Name><is>grus</is></Device_Name></not>
+				<!-- Xiaomi Mi 9T -->
+				<not><Device_Name><is>davinci</is></Device_Name></not>
+				<!-- Redmi Note 9S -->
+				<not><Device_Name><is>curtana</is></Device_Name></not>	
+				<!-- OnePlus Nord -->
+				<not><Device_Name><is>Nord</is></Device_Name></not>
+				<!-- OnePlus Nord 4 -->
+				<not><Device_Name><is>OP5E93L1</is></Device_Name></not>
+				<!-- Moto G 5G Plus -->
+				<not><Device_Name><is>nairo</is></Device_Name></not>
+				<!-- vivo NEX S -->
+				<not><Device_Name><is>PD1805</is></Device_Name></not>
+				<not><Device_Name><is>1805</is></Device_Name></not>
+				<!-- One Plus 8 -->
+				<not><Device_Name><is>OnePlus8</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus8Visible</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus8TMO</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus8VZW</is></Device_Name></not>
+				<!-- One Plus 8T -->
+				<not><Device_Name><is>OnePlus8T</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus8TTMO</is></Device_Name></not>
+				<!-- One Plus 9 -->
+				<not><Device_Name><is>OnePlus9</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus9TMO</is></Device_Name></not>
+				<!-- One Plus 10 Pro -->
+				<not><Device_Name><is>OP516EL1</is></Device_Name></not>
+				<not><Device_Name><is>OP516FL1</is></Device_Name></not>
+				<!-- Honor 9X -->
+				<not><Device_Name><is>HWSTK-HF</is></Device_Name></not>
+				<!-- HUAWEI P30 lite -->
+				<not><Device_Name><is>HWMAR</is></Device_Name></not>
+				<!-- Redmi Note 8 Pro -->
+				<not><Device_Name><is>begonia</is></Device_Name></not>
+				<!-- Asus ROG Phone 2 -->
+				<not><Device_Name><is>ASUS_I001_1</is></Device_Name></not>
+				<!-- OnePlus Nord N10 5G -->
+				<not><Device_Name><is>OnePlusN10</is></Device_Name></not>
+				<not><Device_Name><is>OnePlusN10METRO</is></Device_Name></not>
+				<not><Device_Name><is>OnePlusN10TMO</is></Device_Name></not>
+				<!-- Oppo Reno4 Z 5G -->
+				<not><Device_Name><is>OP4BDCL1</is></Device_Name></not>
+				<!-- POCO X3 NFC -->
+				<not><Device_Name><is>surya</is></Device_Name></not>
+				<!-- Xiaomi Mi 10T Lite -->
+				<not><Device_Name><is>gauguin</is></Device_Name></not>
+				<!-- Xiaomi Mi 11 Lite 5g -->
+				<not><Device_Name><is>renoir</is></Device_Name></not>
+				<!-- Xiaomi Mi 11 -->
+				<not><Device_Name><is>venus</is></Device_Name></not>
+				<!-- Xiaomi 12 -->
+				<not><Device_Name><is>cupid</is></Device_Name></not>
+				<!-- POCO X3 Pro -->
+				<not><Device_Name><is>bhima</is></Device_Name></not>
+				<not><Device_Name><is>vayu</is></Device_Name></not>
+				<!-- POCO F3 -->
+				<not><Device_Name><is>alioth</is></Device_Name></not>
+				<!-- POCO F6 -->
+				<not><Device_Name><is>peridot</is></Device_Name></not>
+				<!-- POCO M4 Pro -->
+				<not><Device_Name><is>fleur</is></Device_Name></not>
+				<not><Device_Name><is>miel</is></Device_Name></not>
+				<!-- POCO X4 Pro -->
+				<not><Device_Name><is>peux</is></Device_Name></not>
+				<not><Device_Name><is>veux</is></Device_Name></not>
+				<!-- Redmi Note 11 -->
+				<not><Device_Name><is>spes</is></Device_Name></not>
+				<not><Device_Name><is>spesn</is></Device_Name></not>
+				<!-- Moto G100 -->
+				<not><Device_Name><is>nio</is></Device_Name></not>
+				<!-- Moto G50 -->
+				<not><Device_Name><is>ibiza</is></Device_Name></not>
+				<!-- Nothing phone (1) -->
+				<not><Device_Name><is>Spacewar</is></Device_Name></not>
+				<!-- Samsung Galaxy S24 Exynos -->
+				<not><Device_Name><is>e1s</is></Device_Name></not>
+				<!-- Galaxy S24 Plus Exynox -->
+				<not><Device_Name><is>e2s</is></Device_Name></not>
+				<!-- Galaxy S24 Plus Qualcomm -->
+				<not><Device_Name><is>e2q</is></Device_Name></not>
+				<!-- Samsung Galaxy S24 Qualcomm -->
+				<not><Device_Name><is>e1q</is></Device_Name></not>
+				<not><Device_Name><is>SCG25</is></Device_Name></not>
+				<not><Device_Name><is>SC-51E</is></Device_Name></not>
+				<!-- Samsung Galaxy S24 Ultra -->
+				<not><Device_Name><is>e3q</is></Device_Name></not>
+				<not><Device_Name><is>SCG26</is></Device_Name></not>
+				<not><Device_Name><is>SC-52E</is></Device_Name></not>
+				<!-- Galaxy Tab S9 -->
+				<not><Device_Name><is>gts9wifi</is></Device_Name></not>
+				<not><Device_Name><is>gts9</is></Device_Name></not>
+				<!-- Galaxy Tab S9+ -->
+				<not><Device_Name><is>gts9pwifi</is></Device_Name></not>
+				<not><Device_Name><is>gts9p</is></Device_Name></not>
+				<!-- Galaxy Tab S9 Ultra -->
+				<not><Device_Name><is>gts9uwifi</is></Device_Name></not>
+				<not><Device_Name><is>gts9u</is></Device_Name></not>
+				<and>
+					<not><stock id="Adreno_540_Renderer"/></not>
+					<not><stock id="Adreno_615_Renderer"/></not>
+					<not><stock id="Adreno_616_Renderer"/></not>
+					<not><stock id="Adreno_618_Renderer"/></not>
+					<not><stock id="Adreno_619_Renderer"/></not>
+					<not><stock id="Adreno_619L_Renderer"/></not>
+					<not><stock id="Adreno_620_Renderer"/></not>
+					<not><stock id="Adreno_630_Renderer"/></not>
+					<not><stock id="Adreno_640_Renderer"/></not>
+					<not><stock id="Adreno_642_Renderer"/></not>
+					<not><stock id="Adreno_650_Renderer"/></not>
+					<not><stock id="Adreno_660_Renderer"/></not>
+					<not><stock id="Adreno_730_Renderer"/></not>
+					<not><stock id="Mali_G51_Renderer"/></not>
+					<not><stock id="Mali_G52_Renderer"/></not>
+					<not><stock id="Mali_G71_Renderer"/></not>
+					<not><stock id="Mali_G72_Renderer"/></not>
+					<not><stock id="Mali_G76_Renderer"/></not>
+					<not><stock id="Mali_G77_Renderer"/></not>
+					<not><stock id="Mali_G78_Renderer"/></not>
+					<not><stock id="Xclipse_920_Renderer"/></not>
+					<!-- Mali G57 -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Mali</contains></GPU_renderer>
+							<GPU_renderer><contains>G57</contains></GPU_renderer>
+						</and>
+					</not>
+					<!-- Adreno 732 -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+							<GPU_renderer><contains>732</contains></GPU_renderer>
+						</and>
+					</not>
+					<!-- Adreno 735 -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+							<GPU_renderer><contains>735</contains></GPU_renderer>
+						</and>
+					</not>
+					<!-- Adreno 642L -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+							<GPU_renderer><contains>642L</contains></GPU_renderer>
+						</and>
+					</not>
+					<!-- Adreno 740 -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+							<GPU_renderer><contains>740</contains></GPU_renderer>
+						</and>
+					</not>
+					<!-- Adreno 750 -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+							<GPU_renderer><contains>750</contains></GPU_renderer>
+						</and>
+					</not>
+					<!-- Mali G710 -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Mali</contains></GPU_renderer>
+							<GPU_renderer><contains>G710</contains></GPU_renderer>
+						</and>
+					</not>
+					<!-- Mali G715 -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Mali</contains></GPU_renderer>
+							<GPU_renderer><contains>G715</contains></GPU_renderer>
+						</and>
+					</not>
+					<!-- Xclipse 940 -->
+					<not>
+						<and>
+							<GPU_renderer><contains>Xclipse</contains></GPU_renderer>
+							<GPU_renderer><contains>940</contains></GPU_renderer>
+						</and>
+					</not>
+				</and>
+			</and>
+		</conditions>
+
+		<uuid>UnsupportedDevice_1_10_RC5_spec</uuid>
+		<alert stock_id="UnsupportedPlayableDoNotNotify"/>
+		
+		<regkey copyInitial="false">
+			<value name="ShouldIgnoreUnsupportedAspect"			type="integer">1</value>
+		</regkey>
+	</spec>
+
+    <!-- Similar to Supported Devices message -->
+	<spec>
+		<conditions>
+			<and>
+				<!-- Pixel 2 -->
+				<not><Device_Name><is>walleye</is></Device_Name></not>
+				<!-- Pixel 2 XL -->
+				<not><Device_Name><is>taimen</is></Device_Name></not>
+				<!-- Pixel 3 -->
+				<not><Device_Name><is>blueline</is></Device_Name></not>
+				<!-- Pixel 3 XL -->
+				<not><Device_Name><is>crosshatch</is></Device_Name></not>
+				<!-- Pixel 3a -->
+				<not><Device_Name><is>sargo</is></Device_Name></not>
+				<!-- Pixel 4 -->
+				<not><Device_Name><is>flame</is></Device_Name></not>
+				<!-- Pixel 4 XL -->
+				<not><Device_Name><is>coral</is></Device_Name></not>
+				<!-- Pixel 4a -->
+				<not><Device_Name><is>sunfish</is></Device_Name></not>
+				<!-- Pixel 4a 5G -->
+				<not><Device_Name><is>bramble</is></Device_Name></not>
+				<!-- Pixel 5 -->
+				<not><Device_Name><is>redfin</is></Device_Name></not>
+				<!-- Pixel 6 -->
+				<not><Device_Name><is>oriole</is></Device_Name></not>
+				<!-- Pixel 6 Pro -->
+				<not><Device_Name><is>raven</is></Device_Name></not>
+				<!-- Pixel 6a -->
+				<not><Device_Name><is>bluejay</is></Device_Name></not>
+				<!-- Pixel 7 -->
+				<not><Device_Name><is>cheetah</is></Device_Name></not>
+				<!-- Pixel 7 Pro -->
+				<not><Device_Name><is>panther</is></Device_Name></not>
+				<!-- Pixel 7a -->
+				<not><Device_Name><is>lynx</is></Device_Name></not>
+				<!-- Pixel 8 -->
+				<not><Device_Name><is>shiba</is></Device_Name></not>
+				<!-- Pixel 8 Pro -->
+				<not><Device_Name><is>husky</is></Device_Name></not>
+				<!-- HTC U12+ -->
+				<not><Device_Name><is>htc_imedtwl</is></Device_Name></not>
+				<not><Device_Name><is>htc_imedugl</is></Device_Name></not>
+				<not><Device_Name><is>htc_imeuhl</is></Device_Name></not>
+				<not><Device_Name><is>htc_imeuhljp</is></Device_Name></not>
+				<!-- Huawei Honor 10 -->
+				<not><Device_Name><is>HWCOL</is></Device_Name></not>
+				<!-- Huawei Mate 20 -->
+				<not><Device_Name><is>HWHMA</is></Device_Name></not>
+				<!-- LG V30+ -->
+				<not><Device_Name><is>joan</is></Device_Name></not>
+				<not><Device_Name><is>L-01K</is></Device_Name></not>
+				<!-- Motorola Moto Z2 Force -->
+				<not><Device_Name><is>nash</is></Device_Name></not>
+				<!-- Nokia 8 -->
+				<not><Device_Name><is>NB1</is></Device_Name></not>
+				<!-- OnePlus 5T -->
+				<not><Device_Name><is>OnePlus5T</is></Device_Name></not>
+				<!-- OnePlus 6 -->
+				<not><Device_Name><is>OnePlus6</is></Device_Name></not>
+				<!-- OnePlus 6T -->
+				<not><Device_Name><is>OnePlus6T</is></Device_Name></not>
+				<!-- OnePlus 7 -->
+				<not><Device_Name><is>OnePlus7</is></Device_Name></not>
+				<!-- OnePlus 7T -->
+				<not><Device_Name><is>OnePlus7T</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus7TTMO</is></Device_Name></not>
+				<!-- Razer Phone -->
+				<not><Device_Name><is>cheryl</is></Device_Name></not>
+				<not><Device_Name><is>cheryl_ckh</is></Device_Name></not>
+				<!-- Sony Xperia XZ1 -->
+				<not><Device_Name><is>701SO</is></Device_Name></not>
+				<not><Device_Name><is>G8341</is></Device_Name></not>
+				<not><Device_Name><is>G8342</is></Device_Name></not>
+				<not><Device_Name><is>G8343</is></Device_Name></not>
+				<not><Device_Name><is>SO-01K</is></Device_Name></not>
+				<not><Device_Name><is>SOV36</is></Device_Name></not>
+				<not><Device_Name><is>G8441</is></Device_Name></not>
+				<not><Device_Name><is>SO-02K</is></Device_Name></not>
+				<!-- Sony Xperia XZ1 Compact -->
+				<not><Device_Name><is>G8441</is></Device_Name></not>
+				<not><Device_Name><is>SO-02K</is></Device_Name></not>
+				<!-- Xperia XZ2  -->
+				<not><Device_Name><is>702SO</is></Device_Name></not>
+				<not><Device_Name><is>H8216</is></Device_Name></not>
+				<not><Device_Name><is>H8266</is></Device_Name></not>
+				<not><Device_Name><is>H8276</is></Device_Name></not>
+				<not><Device_Name><is>H8296</is></Device_Name></not>
+				<not><Device_Name><is>SO-03K</is></Device_Name></not>
+				<not><Device_Name><is>SOV37</is></Device_Name></not>
+				<!-- Xperia XZ2 Compact -->
+				<not><Device_Name><is>H8314</is></Device_Name></not>
+				<not><Device_Name><is>H8324</is></Device_Name></not>
+				<not><Device_Name><is>SO-05K</is></Device_Name></not>
+				<!-- Sony Xperia 1 -->
+				<not><Device_Name><is>J8110</is></Device_Name></not>
+				<not><Device_Name><is>J8170</is></Device_Name></not>
+				<not><Device_Name><is>J9110</is></Device_Name></not>
+				<not><Device_Name><is>J9150</is></Device_Name></not>
+				<not><Device_Name><is>J9180</is></Device_Name></not>
+				<not><Device_Name><is>SO-03L</is></Device_Name></not>
+				<not><Device_Name><is>SOV40</is></Device_Name></not>
+				<not><Device_Name><is>802SO</is></Device_Name></not>
+				<!-- Xiaomi Pocophone F1 -->
+				<not><Device_Name><is>beryllium</is></Device_Name></not>
+				<!-- Samsung Galaxy S8 -->
+				<not><Device_Name><is>dreamlte</is></Device_Name></not>
+				<not><Device_Name><is>dreamlteks</is></Device_Name></not>
+				<not><Device_Name><is>dreamqltechn</is></Device_Name></not>
+				<not><Device_Name><is>dreamqltecmcc</is></Device_Name></not>
+				<not><Device_Name><is>dream2lte</is></Device_Name></not>
+				<not><Device_Name><is>dream2lteks</is></Device_Name></not>
+				<not><Device_Name><is>dream2qltechn</is></Device_Name></not>
+				<not><Device_Name><is>cruiserlteatt</is></Device_Name></not>
+				<not><Device_Name><is>cruiserltesq</is></Device_Name></not>
+				<not><Device_Name><is>dreamqltecan</is></Device_Name></not>
+				<not><Device_Name><is>dreamqltesq</is></Device_Name></not>
+				<not><Device_Name><is>dreamqlteue</is></Device_Name></not>
+				<not><Device_Name><is>SC-02J</is></Device_Name></not>
+				<not><Device_Name><is>SC-03J</is></Device_Name></not>
+				<not><Device_Name><is>SCV35</is></Device_Name></not>
+				<not><Device_Name><is>SCV36</is></Device_Name></not>
+				<!-- Samsung Galaxy Note 8 -->
+				<not><Device_Name><is>greatlte</is></Device_Name></not>
+				<not><Device_Name><is>greatlteks</is></Device_Name></not>
+				<not><Device_Name><is>kona3g</is></Device_Name></not>
+				<not><Device_Name><is>konalte</is></Device_Name></not>
+				<not><Device_Name><is>konalteatt</is></Device_Name></not>
+				<not><Device_Name><is>konaltecan</is></Device_Name></not>
+				<not><Device_Name><is>konawifi</is></Device_Name></not>
+				<not><Device_Name><is>konawifiany</is></Device_Name></not>
+				<not><Device_Name><is>greatqlte</is></Device_Name></not>
+				<not><Device_Name><is>greatqltechn</is></Device_Name></not>
+				<not><Device_Name><is>greatqltecmcc</is></Device_Name></not>
+				<not><Device_Name><is>greatqltecs</is></Device_Name></not>
+				<not><Device_Name><is>greatqlteue</is></Device_Name></not>
+				<not><Device_Name><is>SC-01K</is></Device_Name></not>
+				<not><Device_Name><is>SCV37</is></Device_Name></not>
+				<!-- Samsung Galaxy S9/S9+ -->
+				<not><Device_Name><is>SCV38</is></Device_Name></not>
+				<not><Device_Name><is>SCV39</is></Device_Name></not>
+				<not><Device_Name><is>star2lte</is></Device_Name></not>
+				<not><Device_Name><is>star2lteks</is></Device_Name></not>
+				<not><Device_Name><is>star2qltechn</is></Device_Name></not>
+				<not><Device_Name><is>star2qltecs</is></Device_Name></not>
+				<not><Device_Name><is>star2qltesq</is></Device_Name></not>
+				<not><Device_Name><is>star2qlteue</is></Device_Name></not>
+				<not><Device_Name><is>starlte</is></Device_Name></not>
+				<not><Device_Name><is>starlteks</is></Device_Name></not>
+				<not><Device_Name><is>starqltechn</is></Device_Name></not>
+				<not><Device_Name><is>starqltecmcc</is></Device_Name></not>
+				<not><Device_Name><is>starqltecs</is></Device_Name></not>
+				<not><Device_Name><is>starqltesq</is></Device_Name></not>
+				<not><Device_Name><is>starqlteue</is></Device_Name></not>
+				<not><Device_Name><is>SC-02K</is></Device_Name></not>
+				<not><Device_Name><is>SC-03K</is></Device_Name></not>
+				<!-- Samsung Note 9 -->
+				<not><Device_Name><is>crownlte</is></Device_Name></not>
+				<not><Device_Name><is>crownlteks</is></Device_Name></not>
+				<not><Device_Name><is>crownqltechn</is></Device_Name></not>
+				<not><Device_Name><is>crownqltecs</is></Device_Name></not>
+				<not><Device_Name><is>crownqltesq</is></Device_Name></not>
+				<not><Device_Name><is>crownqlteue</is></Device_Name></not>
+				<not><Device_Name><is>SC-01L</is></Device_Name></not>
+				<not><Device_Name><is>SCV40</is></Device_Name></not>
+				<!-- Samsung Galaxy Note10 -->
+				<not><Device_Name><is>d1q</is></Device_Name></not>
+				<not><Device_Name><is>d1</is></Device_Name></not>
+				<!-- Samsung Galaxy Note10 5G -->
+				<not><Device_Name><is>d1x</is></Device_Name></not>
+				<!-- Samsung Galaxy Note10+ -->
+				<not><Device_Name><is>d2q</is></Device_Name></not>
+				<not><Device_Name><is>SC-01M</is></Device_Name></not>
+				<not><Device_Name><is>SCV45</is></Device_Name></not>
+				<not><Device_Name><is>d2s</is></Device_Name></not>
+				<!-- Samsung Galaxy Note10+ 5G -->
+				<not><Device_Name><is>d2x</is></Device_Name></not>
+				<not><Device_Name><is>d2xq</is></Device_Name></not>
+				<not><Device_Name><is>d2xq2</is></Device_Name></not>
+				<!-- Samsung Galaxy S10e -->
+				<not><Device_Name><is>beyond0</is></Device_Name></not>
+				<not><Device_Name><is>beyond0q</is></Device_Name></not>
+				<!-- Samsung Galaxy S10 -->
+				<not><Device_Name><is>SCV41</is></Device_Name></not>
+				<not><Device_Name><is>beyond1</is></Device_Name></not>
+				<not><Device_Name><is>beyond1q</is></Device_Name></not>
+				<!-- Samsung Galaxy S10+ -->
+				<not><Device_Name><is>SC-05L</is></Device_Name></not>
+				<not><Device_Name><is>beyond2</is></Device_Name></not>
+				<not><Device_Name><is>beyond2q</is></Device_Name></not>
+				<!-- Samsung Galaxy S10 5G -->
+				<not><Device_Name><is>beyondx</is></Device_Name></not>
+				<not><Device_Name><is>beyondxq</is></Device_Name></not>
+				<!-- Samsung Galaxy S10 Lite -->
+				<not><Device_Name><is>r5q</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S4 -->
+				<not><Device_Name><is>gts4llte</is></Device_Name></not>
+				<not><Device_Name><is>gts4llteatt</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltechn</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltekx</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltespr</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltetmo</is></Device_Name></not>
+				<not><Device_Name><is>gts4llteusc</is></Device_Name></not>
+				<not><Device_Name><is>gts4lltevzw</is></Device_Name></not>
+				<not><Device_Name><is>gts4lwifi</is></Device_Name></not>
+				<not><Device_Name><is>gts4lwifichn</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S6 -->
+				<not><Device_Name><is>gts6l</is></Device_Name></not>
+				<not><Device_Name><is>gts6lwifi</is></Device_Name></not>
+				<not><Device_Name><is>gts6x</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S7 -->
+				<not><Device_Name><is>gts7l</is></Device_Name></not>
+				<not><Device_Name><is>gts7lwifi</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8 -->
+				<not><Device_Name><is>gts8wifi</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8 5G -->
+				<not><Device_Name><is>gts8</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8+ -->
+				<not><Device_Name><is>gts8pwifi</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8+ 5G -->
+				<not><Device_Name><is>gts8p</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8 Ultra -->
+				<not><Device_Name><is>gts8uwifi</is></Device_Name></not>
+				<!-- Samsung Galaxy Tab S8 Ultra 5G -->
+				<not><Device_Name><is>gts8u</is></Device_Name></not>
+				<!-- Samsung Galaxy A80-->
+				<not><Device_Name><is>r1q</is></Device_Name></not>
+				<!--Samsung Galaxy S20-->
+				<not>
+					<and>
+						<!-- Mali s20 and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>x1s</is></Device_Name>
+					</and>
+				</not>
+				<not>
+					<and>
+						<!-- Mali s20 5G and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>SC-51A</is></Device_Name>
+					</and>
+				</not>
+				<not>
+					<and>
+						<!-- Mali s20 and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>SCG01</is></Device_Name>
+					</and>
+				</not>
+				<not><Device_Name><is>x1q</is></Device_Name></not>
+				<not><Device_Name><is>SC51Aa</is></Device_Name></not>
+				<not><Device_Name><is>SCG01</is></Device_Name></not>
+				<!--Samsung Galaxy S20 FE -->
+				<not>
+					<and>
+						<!-- Mali s20 FE and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>r8s</is></Device_Name>
+					</and>
+				</not>
+				<not><Device_Name><is>r8q</is></Device_Name></not>
+				<!--Samsung Galaxy S20+ -->
+				<not>
+					<and>
+						<!-- Mali s20 + and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>y2s</is></Device_Name>
+					</and>
+				</not>
+				<not><Device_Name><is>SCG02</is></Device_Name></not>
+				<not><Device_Name><is>y2q</is></Device_Name></not>
+				<!--Samsung Galaxy S20 Ultra-->
+				<not><Device_Name><is>SCG03</is></Device_Name></not>
+				<not><Device_Name><is>z3q</is></Device_Name></not>
+				<not>
+					<and>
+						<!-- Mali s20 Ultra and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>z3s</is></Device_Name>
+					</and>
+				</not>
+				<!-- Samsung Galaxy Note 20 -->
+				<not>
+					<and>
+						<!-- Mali Note 20 and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>c1s</is></Device_Name>
+					</and>
+				</not>
+				<!-- Samsung Galaxy Note 20 Ultra -->
+				<not><Device_Name><is>SC-53A</is></Device_Name></not>
+				<not><Device_Name><is>SCG06</is></Device_Name></not>
+				<not><Device_Name><is>c2q</is></Device_Name></not>
+				<not>
+					<and>
+						<!-- Mali Note 20 ultra and Android 11 or higher -->
+						<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+						<Device_Name><is>c2s</is></Device_Name>
+					</and>
+				</not>
+				<not><Device_Name><is>c1q</is></Device_Name></not>
+				<!-- Samsung Galaxy S21-->
+				<not><Device_Name><is>o1q</is></Device_Name></not>
+				<not><Device_Name><is>o1s</is></Device_Name></not>
+				<not><Device_Name><is>SC-51B</is></Device_Name></not>
+				<not><Device_Name><is>SCG09</is></Device_Name></not>
+				<!-- Samsung Galaxy S21 FE -->
+				<not><Device_Name><is>r9q</is></Device_Name></not>
+				<not><Device_Name><is>r9s</is></Device_Name></not>
+				<!-- Samsung Galaxy S21 Ultra -->
+				<not><Device_Name><is>SC-52B</is></Device_Name></not>
+				<not><Device_Name><is>p3q</is></Device_Name></not>
+				<not><Device_Name><is>p3s</is></Device_Name></not>
+				<!-- Samsung Galaxy S21+ 5G -->
+				<not><Device_Name><is>SCG10</is></Device_Name></not>
+				<not><Device_Name><is>t2q</is></Device_Name></not>
+				<not><Device_Name><is>t2s</is></Device_Name></not>
+				<!-- Samsung Galaxy S22 -->
+				<not><Device_Name><is>r0s</is></Device_Name></not>
+				<not><Device_Name><is>r0q</is></Device_Name></not>
+				<!-- Samsung Galaxy S22+ -->
+				<not><Device_Name><is>g0s</is></Device_Name></not>
+				<not><Device_Name><is>g0q</is></Device_Name></not>
+				<!-- Samsung Galaxy 22 Ultra -->
+				<not><Device_Name><is>b0s</is></Device_Name></not>
+				<not><Device_Name><is>b0q</is></Device_Name></not>
+				<!-- Samsung Galaxy S23 -->
+				<not><Device_Name><is>dm1q</is></Device_Name></not>
+				<!-- Samsung Galaxy S23+ -->
+				<not><Device_Name><is>dm2q</is></Device_Name></not>
+				<!-- Samsung Galaxy S23 Ultra -->
+				<not><Device_Name><is>dm3q</is></Device_Name></not>
+				<!-- Xiaomi Mi 6 -->
+				<not><Device_Name><is>sagit</is></Device_Name></not>
+				<!-- Xiaomi Mi 9 -->
+				<not><Device_Name><is>cepheus</is></Device_Name></not>
+				<!-- Xiaomi Mi 9 SE-->
+				<not><Device_Name><is>grus</is></Device_Name></not>
+				<!-- Xiaomi Mi 9T -->
+				<not><Device_Name><is>davinci</is></Device_Name></not>
+				<!-- Redmi Note 9S -->
+				<not><Device_Name><is>curtana</is></Device_Name></not>	
+				<!-- OnePlus Nord -->
+				<not><Device_Name><is>Nord</is></Device_Name></not>
+				<!-- OnePlus Nord 4 -->
+				<not><Device_Name><is>OP5E93L1</is></Device_Name></not>
+				<!-- Moto G 5G Plus -->
+				<not><Device_Name><is>nairo</is></Device_Name></not>
+				<!-- vivo NEX S -->
+				<not><Device_Name><is>PD1805</is></Device_Name></not>
+				<not><Device_Name><is>1805</is></Device_Name></not>
+				<!-- One Plus 8 -->
+				<not><Device_Name><is>OnePlus8</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus8Visible</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus8TMO</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus8VZW</is></Device_Name></not>
+				<!-- One Plus 8T -->
+				<not><Device_Name><is>OnePlus8T</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus8TTMO</is></Device_Name></not>
+				<!-- One Plus 9 -->
+				<not><Device_Name><is>OnePlus9</is></Device_Name></not>
+				<not><Device_Name><is>OnePlus9TMO</is></Device_Name></not>
+				<!-- One Plus 10 Pro -->
+				<not><Device_Name><is>OP516EL1</is></Device_Name></not>
+				<not><Device_Name><is>OP516FL1</is></Device_Name></not>
+				<!-- Honor 9X -->
+				<not><Device_Name><is>HWSTK-HF</is></Device_Name></not>
+				<!-- HUAWEI P30 lite -->
+				<not><Device_Name><is>HWMAR</is></Device_Name></not>
+				<!-- Redmi Note 8 Pro -->
+				<not><Device_Name><is>begonia</is></Device_Name></not>
+				<!-- Asus ROG Phone 2 -->
+				<not><Device_Name><is>ASUS_I001_1</is></Device_Name></not>
+				<!-- OnePlus Nord N10 5G -->
+				<not><Device_Name><is>OnePlusN10</is></Device_Name></not>
+				<not><Device_Name><is>OnePlusN10METRO</is></Device_Name></not>
+				<not><Device_Name><is>OnePlusN10TMO</is></Device_Name></not>
+				<!-- Oppo Reno4 Z 5G -->
+				<not><Device_Name><is>OP4BDCL1</is></Device_Name></not>
+				<!-- POCO X3 NFC -->
+				<not><Device_Name><is>surya</is></Device_Name></not>
+				<!-- Xiaomi Mi 10T Lite -->
+				<not><Device_Name><is>gauguin</is></Device_Name></not>
+				<!-- Xiaomi Mi 11 Lite 5g -->
+				<not><Device_Name><is>renoir</is></Device_Name></not>
+				<!-- Xiaomi Mi 11 -->
+				<not><Device_Name><is>venus</is></Device_Name></not>
+				<!-- Xiaomi 12 -->
+				<not><Device_Name><is>cupid</is></Device_Name></not>
+				<!-- POCO X3 Pro -->
+				<not><Device_Name><is>bhima</is></Device_Name></not>
+				<not><Device_Name><is>vayu</is></Device_Name></not>
+				<!-- POCO F3 -->
+				<not><Device_Name><is>alioth</is></Device_Name></not>
+				<!-- POCO F6 -->
+				<not><Device_Name><is>peridot</is></Device_Name></not>
+				<!-- POCO M4 Pro -->
+				<not><Device_Name><is>fleur</is></Device_Name></not>
+				<not><Device_Name><is>miel</is></Device_Name></not>
+				<!-- POCO X4 Pro -->
+				<not><Device_Name><is>peux</is></Device_Name></not>
+				<not><Device_Name><is>veux</is></Device_Name></not>
+				<!-- Redmi Note 11 -->
+				<not><Device_Name><is>spes</is></Device_Name></not>
+				<not><Device_Name><is>spesn</is></Device_Name></not>
+				<!-- Moto G100 -->
+				<not><Device_Name><is>nio</is></Device_Name></not>
+				<!-- Moto G50 -->
+				<not><Device_Name><is>ibiza</is></Device_Name></not>
+				<!-- Nothing phone (1) -->
+				<not><Device_Name><is>Spacewar</is></Device_Name></not>
+				<!-- Samsung Galaxy S24 Exynos -->
+				<not><Device_Name><is>e1s</is></Device_Name></not>
+				<!-- Galaxy S24 Plus Exynox -->
+				<not><Device_Name><is>e2s</is></Device_Name></not>
+				<!-- Galaxy S24 Plus Qualcomm -->
+				<not><Device_Name><is>e2q</is></Device_Name></not>
+				<!-- Samsung Galaxy S24 Qualcomm -->
+				<not><Device_Name><is>e1q</is></Device_Name></not>
+				<not><Device_Name><is>SCG25</is></Device_Name></not>
+				<not><Device_Name><is>SC-51E</is></Device_Name></not>
+				<!-- Samsung Galaxy S24 Ultra -->
+				<not><Device_Name><is>e3q</is></Device_Name></not>
+				<not><Device_Name><is>SCG26</is></Device_Name></not>
+				<not><Device_Name><is>SC-52E</is></Device_Name></not>
+				<!-- Galaxy Tab S9 -->
+				<not><Device_Name><is>gts9wifi</is></Device_Name></not>
+				<not><Device_Name><is>gts9</is></Device_Name></not>
+				<!-- Galaxy Tab S9+ -->
+				<not><Device_Name><is>gts9pwifi</is></Device_Name></not>
+				<not><Device_Name><is>gts9p</is></Device_Name></not>
+				<!-- Galaxy Tab S9 Ultra -->
+				<not><Device_Name><is>gts9uwifi</is></Device_Name></not>
+				<not><Device_Name><is>gts9u</is></Device_Name></not>
+				<!-- List of similar devices -->
+				<or>
+					<stock id="Adreno_540_Renderer"/>
+					<stock id="Adreno_615_Renderer"/>
+					<stock id="Adreno_616_Renderer"/>
+					<stock id="Adreno_618_Renderer"/>
+					<stock id="Adreno_619_Renderer"/>
+					<stock id="Adreno_619L_Renderer"/>
+					<stock id="Adreno_620_Renderer"/>
+					<stock id="Adreno_630_Renderer"/>
+					<stock id="Adreno_640_Renderer"/>
+					<stock id="Adreno_642_Renderer"/>
+					<stock id="Adreno_650_Renderer"/>
+					<stock id="Adreno_660_Renderer"/>
+					<stock id="Adreno_730_Renderer"/>
+					<stock id="Mali_G51_Renderer"/>
+					<stock id="Mali_G52_Renderer"/>
+					<stock id="Mali_G71_Renderer"/>
+					<stock id="Mali_G72_Renderer"/>
+					<stock id="Mali_G76_Renderer"/>
+					<stock id="Mali_G77_Renderer"/>
+					<stock id="Mali_G78_Renderer"/>
+					<stock id="Xclipse_920_Renderer"/>
+					<!-- Mali G57 -->
+					<and>
+						<GPU_renderer><contains>Mali</contains></GPU_renderer>
+						<GPU_renderer><contains>G57</contains></GPU_renderer>
+					</and>
+					<!-- Adreno 642L -->
+					<and>
+						<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+						<GPU_renderer><contains>642L</contains></GPU_renderer>
+					</and>
+					<!-- Adreno 732 -->
+					<and>
+						<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+						<GPU_renderer><contains>732</contains></GPU_renderer>
+					</and>
+					<!-- Adreno 735 -->
+					<and>
+						<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+						<GPU_renderer><contains>735</contains></GPU_renderer>
+					</and>
+					<!-- Adreno 740 -->
+					<and>
+						<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+						<GPU_renderer><contains>740</contains></GPU_renderer>
+					</and>
+					<!-- Adreno 750 -->
+					<and>
+						<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+						<GPU_renderer><contains>750</contains></GPU_renderer>
+					</and>
+					<!-- Mali G710 -->
+					<and>
+						<GPU_renderer><contains>Mali</contains></GPU_renderer>
+						<GPU_renderer><contains>G710</contains></GPU_renderer>
+					</and>
+					<!-- Mali G715 -->
+					<and>
+						<GPU_renderer><contains>Mali</contains></GPU_renderer>
+						<GPU_renderer><contains>G715</contains></GPU_renderer>
+					</and>
+					<!-- Xclipse 940 -->
+					<and>
+						<GPU_renderer><contains>Xclipse</contains></GPU_renderer>
+						<GPU_renderer><contains>940</contains></GPU_renderer>
+					</and>
+				</or>
+			</and>
+		</conditions>
+
+		<uuid>SimilarDevice_1_10_RC5</uuid>
+		<alert stock_id="SimilarHardwarePlayableDoNotNotify"/>
+	</spec>
+
+    <!-- Show the reminder to connect alert in the base game only-->
+    <spec>
+		<conditions>
+		<Identifier><is>com.feralinteractive.gridas</is></Identifier>
+		</conditions>
+		<uuid>ReminderToConnectUUID</uuid>
+		<alert stock_id="ReminderToConnect"/>
+	</spec>
+
+	<!-- Initial number of races to prompt for review -->
+	<spec>
+		<uuid>InitialReviewCount147rc4</uuid>
+		<regkey>
+			<value name="NextReviewPrompt"								type="integer">30</value>
+		</regkey>
+	</spec>
+
+	<!-- Disable the crash report GUI pop-up on certain Xiaomi phones and instead
+		 just auto send them. There is a bug on these devices with email address
+		 entry that we cannot fix until we have a device in the office!
+
+		 Workaround by not using this pop-up containing an email entry!
+	-->
+	<spec>
+		<!-- RE-ENABLED THIS NOW FOR ALL PHONES
+
+			 A proper fix is now in place, frev://256522
+		-->
+		<uuid>DisableCrashReportPopUp161RC1</uuid>
+		<regkey>
+			<value name="NonInteractiveCrashReporter"					type="integer">0</value>
+		</regkey>
+	</spec>
+
+
+	<!--
+		Default Hardware Specifications:
+
+		We do not set screen resolution directly here on Android unless necessary,
+		as we will automatically adjusted the screen resolution according to the physical
+		screen size in the code, using maximum 320 DPI.
+	
+		Instead, we will use the SuperSample settings to adjust the actual back buffer
+		resolution.
+	-->
+	<spec>
+		<uuid>DefaultHardwareSpecification147rc4V2</uuid>
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="OverrideInterferenceEffect"					type="integer">1</value>
+
+			<!-- Feral Resolution Scaling & FXAA -->
+			<value name="SuperSampleBase"                               type="integer">8</value>
+			<value name="SuperSampleLevel"                              type="integer">8</value>
+			<value name="FeralUseFXAA"									type="integer">0</value>
+			<value name="FeralFXAAEdgeDetection"						type="double">0.25</value>
+			<value name="FeralFXAASmoothing"							type="integer">1</value>
+			<value name="FixedScreenHeight"								type="integer">720</value>
+			
+			<!-- Feral Optimizations -->
+			<value name="MobileShaderBoost"								type="integer">0</value>
+			<value name="ShadowMaskDivisor"								type="integer">2</value>
+			<value name="DisablePlayerWindshieldRendering"				type="integer">1</value>
+			<value name="UseUltraLowParticlesBlending"					type="integer">1</value>
+			<value name="DisableMainMenuReflections"					type="integer">1</value>
+			<value name="OptimizeLoadStoreActions"						type="integer">1</value>
+			<value name="MultisampleResolveOnStoreEnabled"				type="integer">1</value>
+			<value name="EnableImprovedShadowsSampling"					type="integer">1</value>
+			<value name="UIReduceTextShadow"							type="integer">1</value>
+			<value name="UseUltraLowBloomPrePass"						type="integer">1</value>
+			<value name="DisableDynamicEnvMapMSAA"						type="integer">1</value>
+			<value name="CullDistantCarCharacters"						type="integer">1</value>
+			<value name="CapPauseMenuLuminance"							type="integer">1</value>
+           
+			<!-- Thermal optimisations -->
+			<value name="30FPSMenu3DRender"								type="integer">0</value>
+			<value name="CrowdBillboardDenominator"						type="double">2.0</value>
+			<value name="ScaleOrnamentLOD"								type="integer">0</value>
+			
+			<!-- Help Screen Customization -->
+			<value name="HelpScreenReferenceDPI"						type="integer">150</value>
+			<value name="HelpScreenMinimumWidthInches"					type="integer">4</value>
+			
+			<!-- Framerate Cap -->
+			<value name="gfxconfig_max_fps"								type="integer">120</value>
+			<value name="gfxconfigpowersaver_max_fps"					type="integer">60</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_default_preset_name"					type="string">ultralow</value>
+			<value name="gfxconfig_default_multisampling"				type="string">off</value>
+			<value name="gfxconfig_preset_name"							type="string">custom</value>
+			<value name="gfxconfig_multisampling"						type="string">off</value>
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">ultralow</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">off</value>
+			<value name="gfxconfig_crowd"								type="string">off</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">ultralow</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">ultralow</value>
+			<value name="gfxconfig_objects"								type="string">low</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">ultralow</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+			<value name="gfxconfig_ai_count"							type="string">low</value>
+			<value name="gfxconfig_voice_count"							type="string">low</value>
+			<value name="gfxconfig_advanced_lighting"					type="string">off</value>
+			<value name="gfxconfig_avsm"								type="string">off</value>
+			<value name="gfxconfig_dynamic_ambient_occ_soft"			type="string">off</value>
+			<value name="gfxconfig_intel_aoit"							type="string">off</value>
+			<value name="gfxconfig_second_screen"						type="string">low</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_window_scale"				type="integer">80</value>
+			<value name="gfxconfigpowersaver_advanced_fog"				type="string">off</value>
+			<value name="gfxconfigpowersaver_advanced_lighting"			type="string">off</value>
+			<value name="gfxconfigpowersaver_ai_count"					type="string">low</value>
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_avsm"						type="string">off</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">low</value>
+			<value name="gfxconfigpowersaver_cloth"						type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_dynamic_ambient_occ"		type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_dynamic_ambient_occ_soft"	type="string">off</value>
+			<value name="gfxconfigpowersaver_global_illumination"		type="string">off</value>
+			<value name="gfxconfigpowersaver_groundCover"				type="string">off</value>
+			<value name="gfxconfigpowersaver_intel_aoit"				type="string">off</value>
+			<value name="gfxconfigpowersaver_mirrors"					type="string">off</value>
+			<value name="gfxconfigpowersaver_multisampling"				type="string">off</value>
+			<value name="gfxconfigpowersaver_night_lighting"			type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">low</value>
+			<value name="gfxconfigpowersaver_particles"					type="string">off</value>
+			<value name="gfxconfigpowersaver_preset_name"				type="string">custom</value>
+			<value name="gfxconfigpowersaver_second_screen"				type="string">low</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_shadows"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_skidmarks"					type="string">on</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">low</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">low</value>
+			<value name="gfxconfigpowersaver_voice_count"				type="string">low</value>
+			<value name="gfxconfigpowersaver_water"						type="string">low</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_multisampling"					type="string">off</value>
+			<value name="gfxconfig_high_night_lighting"					type="string">medium</value>
+			<value name="gfxconfig_high_shadows"						type="string">ultralow</value>
+			<value name="gfxconfig_high_advanced_fog"					type="string">off</value>
+			<value name="gfxconfig_high_particles"						type="string">low</value>
+			<value name="gfxconfig_high_crowd"							type="string">low</value>
+			<value name="gfxconfig_high_cloth"							type="string">high</value>
+			<value name="gfxconfig_high_dynamic_ambient_occ"			type="string">low</value>
+			<value name="gfxconfig_high_groundCover"					type="string">off</value>
+			<value name="gfxconfig_high_vehicles"						type="string">low</value>
+			<value name="gfxconfig_high_track"							type="string">medium</value>
+			<value name="gfxconfig_high_trees"							type="string">medium</value>
+			<value name="gfxconfig_high_objects"						type="string">medium</value>
+			<value name="gfxconfig_high_car_reflection"					type="string">low</value>
+			<value name="gfxconfig_high_water"							type="string">low</value>
+			<value name="gfxconfig_high_mirrors"						type="string">off</value>
+			<value name="gfxconfig_high_skidmarks"						type="string">on</value>
+			<value name="gfxconfig_high_global_illumination"			type="string">off</value>
+			<value name="gfxconfig_high_textures"						type="string">high</value>
+			<value name="gfxconfig_high_shaders"						type="string">ultralow</value>
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">low</value>
+			<value name="gfxconfig_high_ai_count"						type="string">low</value>
+			<value name="gfxconfig_high_voice_count"					type="string">low</value>
+			<value name="gfxconfig_high_advanced_lighting"				type="string">off</value>
+			<value name="gfxconfig_high_avsm"							type="string">off</value>
+			<value name="gfxconfig_high_dynamic_ambient_occ_soft"		type="string">off</value>
+			<value name="gfxconfig_high_intel_aoit"						type="string">off</value>
+			<value name="gfxconfig_high_second_screen"					type="string">low</value>
+		</regkey>
+
+		<!-- Feral Dynamic Resoltion Scaling -->
+		<regkey path="Software\Feral Interactive\Grid Autosport\Setup\DynamicResolutionScaling" copyInitial="false">
+			<value name="Enable"										type="integer">1</value>
+			<value name="RaiseTimeMargin"								type="double">1.0</value>
+			<value name="StepCount"										type="integer">5</value>
+			<value name="MinScaling"									type="double">0.8</value>
+			<value name="RaiseDelayFrames"								type="integer">6</value>
+			<value name="DropDelayFrames"								type="integer">2</value>
+			<value name="RaiseDelayFramesInRace"						type="integer">120</value>
+		</regkey>
+	</spec>
+
+
+	<!-- Default touch UI deadzone -->
+	<spec>
+		<uuid>DefaultDeadzone16rc2</uuid>
+		<regkey>
+			<value name="TouchUIDeadZone"								type="integer">5</value>
+		</regkey>
+	</spec>
+
+
+	<!-- Turn on DRS for the demo -->
+	<spec>
+		<uuid>DemoDynamicResolutionScaling145rc6</uuid>
+
+		<conditions>
+			<Identifier><is>com.feralinteractive.gridmpdemo</is></Identifier>
+		</conditions>
+
+		<regkey>
+			<value name="EnableDynamicResolution"						type="integer">1</value>
+		</regkey>
+	</spec>
+
+
+	<spec>
+		<uuid>DefaultHardwareSpecification_NVIDIA147rc4V2</uuid>
+		<per-renderer/>
+
+		<conditions>
+			<GPU_vendor><is>nvidia</is></GPU_vendor>
+		</conditions>
+
+		<regkey>
+			<value name="SuperSampleBase" 								type="integer">6</value>
+			<value name="SuperSampleScale" 								type="integer">8</value>
+
+			<value name="gfxconfig_default_multisampling" 				type="string">cmaa</value>
+			<value name="gfxconfig_textures" 							type="string">low</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 430 Settings -->
+		<conditions>
+			<stock id="Adreno_430_Renderer"/>
+		</conditions>
+
+		<uuid>Adreno430HardwareSpecifications147rc4V2</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">ultralow</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">off</value>
+			<value name="gfxconfig_crowd"								type="string">ultralow</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">ultralow</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">low</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 530 Settings -->
+		<conditions>
+			<stock id="Adreno_530_Renderer"/>
+		</conditions>
+
+		<uuid>Adreno530HardwareSpecifications_1_9_b33</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="FixedScreenHeight"								type="integer">720</value>
+			<value name="MobileGraphicBoost"							type="integer">0</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">ultralow</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">off</value>
+			<value name="gfxconfig_crowd"								type="string">ultralow</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">ultralow</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">low</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 540 Settings -->
+		<conditions>
+			<stock id="Adreno_540_Renderer"/>
+		</conditions>
+
+		<uuid>Adreno540HardwareSpecifications_1_9_b33</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">720</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_multisampling"						type="string">2xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">low</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+
+			<!-- Energy Saver Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">low</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 630 and 642 Settings -->
+		<conditions>
+			<or>
+				<stock id="Adreno_630_Renderer"/>
+				<stock id="Adreno_642_Renderer"/>
+			</or>
+		</conditions>
+
+		<uuid>Adreno630HardwareSpecifications_1_9_1_RC3</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>	
+			
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">720</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">2xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+			
+			<!-- Required workaround for driver bug -->
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">ultralow</value>
+			<value name="gfxconfig_high_crowd"							type="string">low</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 640 Settings -->
+		<conditions>
+			<stock id="Adreno_640_Renderer"/>
+		</conditions>
+
+		<uuid>Adreno640HardwareSpecifications_1_9_RC22</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">800</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">90</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 650 Settings -->
+		<conditions>
+			<stock id="Adreno_650_Renderer"/>
+		</conditions>
+
+		<uuid>Adreno650HardwareSpecifications_1_9_1_RC3</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">900</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">80</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">high</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 660 Settings -->
+		<conditions>
+			<stock id="Adreno_660_Renderer"/>
+		</conditions>
+
+		<uuid>Adreno660HardwareSpecifications_1_9_1_RC3</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">900</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">80</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">high</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<conditions>
+			<or>
+				<stock id="Adreno_730_Renderer"/>
+				<!-- Adreno 732 -->
+				<and>
+					<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+					<GPU_renderer><contains>732</contains></GPU_renderer>
+				</and>
+				<!-- Adreno 735 -->
+				<and>
+					<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+					<GPU_renderer><contains>735</contains></GPU_renderer>
+				</and>
+			</or>
+		</conditions>
+
+		<uuid>Adreno730HardwareSpecifications_1_9_3_RC11</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">900</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">80</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">high</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 740 Settings -->
+		<conditions>
+			<and>
+				<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+				<GPU_renderer><contains>740</contains></GPU_renderer>
+			</and>
+		</conditions>
+
+		<uuid>Adreno740HardwareSpecifications_1_10RC10</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">900</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">80</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">high</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 750 Settings -->
+		<conditions>
+			<and>
+				<GPU_renderer><contains>Adreno</contains></GPU_renderer>
+				<GPU_renderer><contains>750</contains></GPU_renderer>
+			</and>
+		</conditions>
+
+		<uuid>Adreno750HardwareSpecifications_1_10_2RC1</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">1080</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">80</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">high</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">high</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Adreno 610 618 620 Settings -->
+		<conditions>
+			<or>
+				<stock id="Adreno_610_Renderer"/>
+				<stock id="Adreno_612_Renderer"/>
+				<stock id="Adreno_615_Renderer"/>
+				<stock id="Adreno_616_Renderer"/>
+				<stock id="Adreno_617_Renderer"/>
+				<stock id="Adreno_618_Renderer"/>
+				<stock id="Adreno_619_Renderer"/>
+				<stock id="Adreno_619L_Renderer"/>
+				<stock id="Adreno_620_Renderer"/>
+			</or>
+		</conditions>
+
+		<uuid>Adreno610HardwareSpecifications_1_9_1_RC3</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="FixedScreenHeight"								type="integer">720</value>
+			<value name="MobileGraphicBoost"							type="integer">0</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">ultralow</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">off</value>
+			<value name="gfxconfig_crowd"								type="string">ultralow</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">ultralow</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">low</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">low</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">low</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">low</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">low</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">low</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Mali T880 Settings -->
+		<conditions>
+			<stock id="Mali_T880_Renderer"/>
+		</conditions>
+
+		<uuid>MaliT880HardwareSpecifications147rc4V2</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">ultralow</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">off</value>
+			<value name="gfxconfig_crowd"								type="string">ultralow</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">ultralow</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Mali G51 and G57 Settings -->
+		<conditions>
+			<or>
+				<stock id="Mali_G51_Renderer"/>
+				<stock id="Mali_G52_Renderer"/>
+				<and>
+					<GPU_renderer><contains>Mali</contains></GPU_renderer>
+					<GPU_renderer><contains>G57</contains></GPU_renderer>
+				</and>
+			</or>
+		</conditions>
+
+		<uuid>MaliG51HardwareSpecifications_1_9_b35</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="NeedsFlushAfterAO"								type="integer">1</value>
+			<value name="FixedScreenHeight"								type="integer">720</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">ultralow</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">off</value>
+			<value name="gfxconfig_crowd"								type="string">ultralow</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">low</value>
+			<value name="gfxconfig_shaders"								type="string">ultralow</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Mali G71 Settings -->
+		<conditions>
+			<stock id="Mali_G71_Renderer"/>
+		</conditions>
+
+		<uuid>MaliG71HardwareSpecifications_1_9_b33</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="FixedScreenHeight"								type="integer">720</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">ultralow</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">off</value>
+			<value name="gfxconfig_crowd"								type="string">ultralow</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">ultralow</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Mali G72 MP 12 Settings -->
+		<conditions>
+			<stock id="Mali_G72_MP12_Renderer"/>
+		</conditions>
+
+		<uuid>MaliG72MP12HardwareSpecifications_1_9_b33</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="FixedScreenHeight"								type="integer">720</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">ultralow</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">off</value>
+			<value name="gfxconfig_crowd"								type="string">ultralow</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">ultralow</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Settings -->
+			<value name="gfxconfigpowersaver_window_scale"				type="integer">100</value>
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Mali G72 Settings -->
+		<conditions>
+			<stock id="Mali_G72_Renderer"/>
+			<not><stock id="Mali_G72_MP12_Renderer"/></not>
+		</conditions>
+
+		<uuid>MaliG72HardwareSpecifications_1_9_b33</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+			<value name="DisableBlendedMesh"							type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">800</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">low</value>
+			<value name="gfxconfig_shadows"								type="string">low</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">low</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">low</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">low</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">low</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Mali G76 Settings -->
+		<conditions>
+			<stock id="Mali_G76_Renderer"/>
+		</conditions>
+
+		<uuid>MaliG76HardwareSpecifications_1_9_b33</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">800</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">90</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+	<spec>
+		<!-- Mali G77 Settings -->
+		<conditions>
+			<and>
+				<!-- Only Android 11 and above -->
+				<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+				<stock id="Mali_G77_Renderer"/>
+			</and>
+		</conditions>
+
+		<uuid>MaliG77HardwareSpecifications_1_9_1_RC3</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">800</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">90</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Mali G78 Settings -->
+		<conditions>
+			<and>
+				<!-- Only Android 11 and above -->
+				<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+				<stock id="Mali_G78_Renderer"/>
+			</and>
+		</conditions>
+
+		<uuid>MaliG78HardwareSpecifications_1_9_3_RC11</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">800</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">80</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">low</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Mali G710 | G715 Settings -->
+		<conditions>
+			<or>	
+				<and>
+					<GPU_renderer><contains>Mali</contains></GPU_renderer>
+					<GPU_renderer><contains>G710</contains></GPU_renderer>
+				</and>
+				<and>
+					<GPU_renderer><contains>Mali</contains></GPU_renderer>
+					<GPU_renderer><contains>G715</contains></GPU_renderer>
+				</and>
+			</or>	
+		</conditions>
+
+		<uuid>MaliG710HardwareSpecifications_1_10_RC5</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">800</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">80</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">high</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">low</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Xclipse 920 Settings -->
+		<conditions>
+			<or>
+				<stock id="Xclipse_920_Renderer"/>
+				<and>
+					<GPU_renderer><contains>Xclipse</contains></GPU_renderer>
+					<GPU_renderer><contains>940</contains></GPU_renderer>
+				</and>
+			</or>
+		</conditions>
+
+		<uuid>Xclipse920HardwareSpecifications_1_10_RC10</uuid>
+
+		<regkey>
+			<!-- Override Settings -->
+			<value name="RegistryOverridesSettings"						type="integer">1</value>
+			<value name="AllowPerformanceMode"							type="integer">1</value>
+			<value name="ForcePerformanceModeInMenus"					type="integer">1</value>
+
+			<!-- Performance Mode Resolution & Target Framerate -->
+			<value name="FixedScreenHeight"								type="integer">800</value>
+			<value name="gfxconfig_high_window_scale"					type="integer">80</value>
+			<value name="gfxconfig_high_max_fps"						type="integer">120</value>
+
+			<!-- Graphics Mode Settings -->
+			<value name="gfxconfig_multisampling"						type="string">4xmsaa</value>
+			<value name="gfxconfig_night_lighting"						type="string">medium</value>
+			<value name="gfxconfig_shadows"								type="string">medium</value>
+			<value name="gfxconfig_advanced_fog"						type="string">off</value>
+			<value name="gfxconfig_particles"							type="string">low</value>
+			<value name="gfxconfig_crowd"								type="string">low</value>
+			<value name="gfxconfig_cloth"								type="string">high</value>
+			<value name="gfxconfig_dynamic_ambient_occ"					type="string">low</value>
+			<value name="gfxconfig_groundCover"							type="string">off</value>
+			<value name="gfxconfig_vehicles"							type="string">medium</value>
+			<value name="gfxconfig_track"								type="string">medium</value>
+			<value name="gfxconfig_trees"								type="string">medium</value>
+			<value name="gfxconfig_objects"								type="string">medium</value>
+			<value name="gfxconfig_car_reflection"						type="string">low</value>
+			<value name="gfxconfig_water"								type="string">low</value>
+			<value name="gfxconfig_mirrors"								type="string">off</value>
+			<value name="gfxconfig_skidmarks"							type="string">on</value>
+			<value name="gfxconfig_global_illumination"					type="string">off</value>
+			<value name="gfxconfig_textures"							type="string">high</value>
+			<value name="gfxconfig_shaders"								type="string">medium</value>
+			<value name="gfxconfig_anisotropic_filtering"				type="string">off</value>
+
+			<!-- Energy Saver Mode Settings -->
+			<value name="gfxconfigpowersaver_anisotropic_filtering"		type="string">off</value>
+			<value name="gfxconfigpowersaver_car_reflection"			type="string">high</value>
+			<value name="gfxconfigpowersaver_crowd"						type="string">low</value>
+			<value name="gfxconfigpowersaver_objects"					type="string">medium</value>
+			<value name="gfxconfigpowersaver_shaders"					type="string">ultralow</value>
+			<value name="gfxconfigpowersaver_textures"					type="string">high</value>
+			<value name="gfxconfigpowersaver_track"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_trees"						type="string">medium</value>
+			<value name="gfxconfigpowersaver_vehicles"					type="string">medium</value>
+
+			<!-- Performance Mode Settings -->
+			<value name="gfxconfig_high_anisotropic_filtering"			type="string">off</value>
+		</regkey>
+		
+		<!-- Disable DRS fbug://GRIDAUTO-8073 -->
+		<regkey path="Software\Feral Interactive\Grid Autosport\Setup\DynamicResolutionScaling">
+			<value name="Enable"										type="integer">0</value>
+		</regkey>
+	</spec>
+
+	<spec>
+		<!-- Exynos 9810 perform worse when multithreading car updates -->
+		<conditions>
+			<Board><contains>universal9810</contains></Board>
+		</conditions>
+
+		<uuid>exynos9810_multithreading_issues145rc6</uuid>
+
+
+		<regkey>
+			<value name="SynchronousCarUpdate"		type="integer">1</value>
+		</regkey>
+	</spec>
+	
+	<spec>
+		<!-- Runtime ASTC encoding fast enough now to be worth enabling on all devices
+			 now that we can use the multithreaded option
+		-->
+		<uuid>highmemory_load_times_16RC7</uuid>
+		
+		<regkey>
+			 <value name="FeralEnableRuntimeASTCCompression" 			type="integer">1</value>
+			 <value name="ThreadedASTCEncoding" 						type="integer">1</value>
+		</regkey>
+		
+	</spec>
+
+	<!-- Reduced haptic strengh fbug://GRIDAUTO-7969 -->
+	<spec>
+		<conditions>
+			<!-- Applies to Pixel and Samsung devices via regkey -->
+		</conditions>
+		<uuid>haptic_device_strength_19R30</uuid>
+		<regkey>
+			<value name="HapticDeviceStrength" type="string">0.4</value>
+			<value name="HapticDeviceStrength_samsung" type="string">0.3</value>
+			<value name="HapticDeviceStrength_google" type="string">0.3</value>
+		</regkey>
+	</spec>
+
+	<!-- OnePlus Nord N10 UI override,fbug://GRIDAUTO-8019 -->
+	<spec>
+		<uuid>OnePlus_NordN10_ui_overridev2</uuid>
+ 
+		<conditions>
+			<or>
+				<Device_Name><is>OnePlusN10</is></Device_Name>
+				<Device_Name><is>OnePlusN10METRO</is></Device_Name>
+				<Device_Name><is>OnePlusN10TMO</is></Device_Name>
+				<Device_Name><is>Spacewar</is></Device_Name>
+				<!-- Samsung Galaxy S10 fbug://COHONE-7507 -->
+				<Device_Name><is>beyond1</is></Device_Name>
+				<Device_Name><is>beyond1q</is></Device_Name>
+				<!-- Samsung Galaxy S10+ -->
+				<Device_Name><is>beyond2</is></Device_Name>
+				<Device_Name><is>beyond2q</is></Device_Name>
+			</or>
+		</conditions>
+ 
+		<regkey path="Software\Feral Interactive\Grid Autosport\Setup">
+			<value name="DeviceIsTablet" type="integer">0</value>
+		</regkey>
+	</spec>
+
+	<!-- Grid shader workaround Adreno 650 fbug://GRIDAUTO-7202 -->
+	<spec>
+
+		<conditions>
+			<and>
+				<OS_version_major><more_or_equal>11</more_or_equal></OS_version_major>
+				<stock id="Adreno_650_Renderer"/>
+			</and>
+		</conditions>
+		<uuid>GRIDAUTO7202Workaround20</uuid>
+		<regkey>
+			<value name="EnableGRIDAUTO7202Workaround" type="integer">1</value>
+		</regkey>
+
+	</spec>
+
+	<!-- Targeting Xiaomi MiUI 14 devices -->
+	<spec>
+		<uuid>FeralSplashScreenHangMiUI</uuid>
+		<conditions>
+			<and>
+				<Vendor_Name><is>Xiaomi</is></Vendor_Name>
+				<OS_version_major><more_or_equal>12</more_or_equal></OS_version_major>
+			</and>
+		</conditions>
+
+		<regkey path="Software\IndirectX\Direct3D\Config" copyInitial="false">
+			<value name="VulkanRenderToBackbuffer" type="integer">0</value>
+		</regkey>
+ 	</spec>
+
+	<!-- Enabling HyperOS audio bug workaround for all devices -->
+	<spec>
+		<regkey path="Software\Feral Interactive\Grid Autosport\Setup">
+			<value name="WwiseSoundBundlePluginSoundCutFix" type="integer">1</value>
+		</regkey>
+ 	</spec>
+
+</gameinfo>
