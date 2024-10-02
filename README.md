@@ -1,2 +1,3 @@
 # grid_pa1n
-Workaround for playing old versions of Grid Autosport.
+A workaround for playing old versions of Grid Autosport.
+This mod also unlocks more fps on powerfull chipsets.
